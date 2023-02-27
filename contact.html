@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="stylesheet" herf="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="nav.js" defer></script>
+    <script src="https://kit.fontawesome.com/37725d52e1.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("rQYMcCeu3DQ-Lbqmw");
+        })();
+    </script>
+</head>
+<body class="home">
+    
+    <header class="primary-header flex">
+        <div class="logo">
+            <!-- <img src="Images/logo1.png" alt=""> -->
+            Abhi
+        </div>
+        
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                    <a href="index.html">
+                        <span aria-hidden="true">00</span>Home
+                    </a>
+                </li>
+                <li>
+                    <a href="portfolio.html">
+                        <span aria-hidden="true">01</span>Portfolio
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="about.html">
+                        <span aria-hidden="true">02</span>Work
+                    </a>
+                </li>
+                <li>
+                    <a href="certifications.html">
+                        <span aria-hidden="true">03</span>Certifications
+                    </a>
+                </li> -->
+                <li>
+                    <a href="contact.html">
+                        <span aria-hidden="true">04</span>Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contact-container">
+        <div class="suggestion-box">
+            <div class="toggle-container">
+                <!-- <label for="theme" class="theme">
+                    <span class="theme-text">Contact</span>
+                    <input type="checkbox" id="theme">
+                    <span class="theme-button"></span>
+                    <span class="theme-text">Suggest</span>
+                </label> -->
+            </div>
+            <div class="comment-box">
+                <!-- <h2>Comments</h2> -->
+                <form action="#">
+                    <input type="text" id="full_name" placeholder="Full Name .." required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <textarea name="comment" id="message" placeholder="Type in your suggesions regarding this site..."></textarea>
+                    <button type="submit" onclick="sendMail()">Submit</button>
+                </form>
+                <!-- <div class="status" id="status">Success</div> -->
+            </div>
+        </div>
+
+        <div class="singleCol social-media-icons">
+            <a href="https://www.instagram.com/_a.b.h.i____.n/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.instagram.com/_a.b.h.i____.n/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/_a.b.h.i____.n/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.instagram.com/_a.b.h.i____.n/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
