@@ -196,7 +196,8 @@
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #75a3a3;
+    /* background-color: #75a3a3; */
+    background-color: #1DA1F2;
     /* outline: 2px solid purple; */
     
 }
